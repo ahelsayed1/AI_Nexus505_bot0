@@ -2,13 +2,14 @@
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": "pip install -r requirements.txt",
+    "buildCommand": "pip install -r requirements.txt --break-system-packages",
     "nixpacksPlan": {
       "providers": ["python"],
       "phases": {
         "setup": {
           "nixPkgs": [
             "python311",
+            "python311Packages.pip",
             "ffmpeg",
             "libjpeg",
             "zlib",
@@ -19,7 +20,7 @@
         },
         "install": {
           "cmds": [
-            "python -m pip install -r requirements.txt"
+            "python3 -m pip install -r requirements.txt --break-system-packages"
           ]
         }
       }
