@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+env.bak/
+venv.bak/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+bot_database.db
+backup_*.db
+
+# Logs
+*.log
+logs/
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# API Keys
+*_key.txt
+*_token.txt
+
+# Generated files by AI
+generated_*.png
+generated_*.jpg
+generated_*.mp4
+
+# Railway
+.railway/
+railway.toml
